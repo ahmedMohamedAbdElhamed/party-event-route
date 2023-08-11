@@ -87,10 +87,11 @@ let tmier = setInterval(() => {
 }, 1000);
 
 //? Form Part
+let remainingCharacters;
 $("textarea").keyup(function () {
-  const remainingCharacters = 100 - $(this).val().length;
+  remainingCharacters = 100 - $(this).val().length;
   $("#remainingCharacters").text(remainingCharacters);
-  if (remainingCharacters == 0) {
+  if (remainingCharacters <= 0) {
     $(".counterMessage").addClass("d-none").removeClass("d-block");
     $(".alertMessage").addClass("d-block").removeClass("d-none");
   } else {
