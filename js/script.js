@@ -8,7 +8,7 @@ $(document).ready(function () {
 const offset = $("#details").offset().top;
 
 function scrollNavBar() {
-  const scrollValue = $(window).scrollTop();
+  const scrollValue = $('.open-btn').offset().top;
   if (scrollValue >= offset - $(".open-btn").outerHeight()) {
     $(".open-btn").css("background-color", "#e78285");
   } else {

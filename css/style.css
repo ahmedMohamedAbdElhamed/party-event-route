@@ -76,11 +76,10 @@ nav {
   min-width: 25vw;
   font-size: 1.5rem;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .nav-section {
-  width: fit-content;
   padding: 20px;
   background-color: #111111;
 }
@@ -113,10 +112,9 @@ nav {
 .open-btn {
   display: flex;
   align-items: center;
-  width: fit-content;
-  font-size: 1.25rem;
   padding: 0.5rem 0.875rem;
-  border-end-end-radius: 20px;
+  border-end-end-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
@@ -218,7 +216,7 @@ header h1 {
 }
 
 .contactUs .socialLinks i:hover {
-  background-color: #D62E33;
+  background-color: #d62e33;
   color: white;
 }
 
